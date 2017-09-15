@@ -40,6 +40,11 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!--fork:enable devtools -->
+                    <fork>true</fork>
+                    <addResources>true</addResources><!--support hot deploy-->
+                </configuration>
             </plugin>
         </plugins>
     </build>
